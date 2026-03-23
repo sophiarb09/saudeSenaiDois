@@ -2,3 +2,105 @@
     margin: 0;
     padding: 0;
 }
+
+/* Importando uma fonte moderna e limpa */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Inter', sans-serif;
+    background-color: #f0f4f8; /* Azul acinzentado muito claro */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    color: #2d3748;
+}
+
+/* Container de Cadastro */
+.cadastro {
+    background-color: #ffffff;
+    padding: 2rem;
+    border-radius: 12px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.05);
+    width: 100%;
+    max-width: 400px;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    border-top: 5px solid #007bff; /* Detalhe azul Senai/Saúde */
+}
+
+/* Estilização dos Inputs */
+input[type="text"],
+input[type="number"] {
+    width: 100%;
+    padding: 12px 15px;
+    border: 1px solid #e2e8f0;
+    border-radius: 8px;
+    font-size: 14px;
+    transition: all 0.3s ease;
+}
+
+input:focus {
+    outline: none;
+    border-color: #007bff;
+    box-shadow: 0 0 0 3px rgba(0, 123, 255, 0.1);
+}
+
+/* Checkbox e Label */
+label {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 14px;
+    color: #4a5568;
+    cursor: pointer;
+    padding: 5px 0;
+}
+
+/* Botões */
+button {
+    cursor: pointer;
+    border: none;
+    border-radius: 8px;
+    padding: 12px;
+    font-weight: 600;
+    transition: background 0.3s ease, transform 0.1s;
+}
+
+button[onclick="cadastrar()"] {
+    background-color: #007bff;
+    color: white;
+}
+
+button[onclick="cadastrar()"]:hover {
+    background-color: #0056b3;
+}
+
+/* Área de Controles */
+.controles {
+    margin-top: 2rem;
+}
+
+button[onclick="chamarProximo()"] {
+    background-color: #28a745; /* Verde para ação de prosseguir */
+    color: white;
+    padding: 15px 30px;
+    font-size: 16px;
+    box-shadow: 0 4px 12px rgba(40, 167, 69, 0.2);
+}
+
+button[onclick="chamarProximo()"]:hover {
+    background-color: #218838;
+}
+
+button:active {
+    transform: scale(0.98);
+}
