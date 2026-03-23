@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="estilo.css">
+    <title>Senai+Saúde</title>
+</head>
+<body>
+
+    <div class="cadastro">
+        <input type="text" id="nome" placeholder="Nome Completo">
+        <input type="number" id="idade" placeholder="Idade">
+        <input type="text" id="cpf" placeholder="CPF">
+        <input type="text" id="telefone" placeholder="Telefone">
+            <label>
+                <input type="checkbox" id="isPreferencial"> Paciente Preferencial
+            </label>
+        <button onclick="cadastrar()">Cadastrar</button>
+    </div>
+    
+    <div class="controles">
+        <button onclick="chamarProximo()">Chamar Próximo da Fila</button>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
